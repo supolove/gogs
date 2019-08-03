@@ -5,15 +5,14 @@
 package context
 
 import (
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"os"
 	"path"
 
 	"github.com/Unknwon/com"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 // renderNoticeBanner checks if a notice banner file exists and loads the message to display

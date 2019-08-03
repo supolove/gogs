@@ -6,10 +6,10 @@ package admin
 
 import (
 	api "github.com/gogs/go-gogs-client"
+	"gogs/routes/api/v1/org"
+	"gogs/routes/api/v1/user"
 
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/routes/api/v1/org"
-	"github.com/gogs/gogs/routes/api/v1/user"
+	"gogs/pkg/context"
 )
 
 // https://github.com/gogs/go-gogs-client/wiki/Administration-Organizations#create-a-new-organization

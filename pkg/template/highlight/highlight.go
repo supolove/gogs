@@ -5,10 +5,9 @@
 package highlight
 
 import (
+	"gogs/pkg/setting"
 	"path"
 	"strings"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var (

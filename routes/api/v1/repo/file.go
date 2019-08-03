@@ -6,10 +6,10 @@ package repo
 
 import (
 	"github.com/gogs/git-module"
+	"gogs/models"
+	"gogs/routes/repo"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/routes/repo"
+	"gogs/pkg/context"
 )
 
 // https://github.com/gogs/go-gogs-client/wiki/Repositories-Contents#download-raw-content

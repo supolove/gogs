@@ -7,15 +7,14 @@ package markup
 import (
 	"bytes"
 	"fmt"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"path"
 	"path/filepath"
 	"regexp"
 	"strings"
 
 	"github.com/russross/blackfriday"
-
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 // IsMarkdownFile reports whether name looks like a Markdown file based on its extension.

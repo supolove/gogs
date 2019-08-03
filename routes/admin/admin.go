@@ -6,6 +6,13 @@ package admin
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/context"
+	"gogs/pkg/cron"
+	"gogs/pkg/mailer"
+	"gogs/pkg/process"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"runtime"
 	"strings"
 	"time"
@@ -13,14 +20,6 @@ import (
 	"github.com/Unknwon/com"
 	"github.com/json-iterator/go"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/cron"
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 const (

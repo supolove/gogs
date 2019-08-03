@@ -6,10 +6,9 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
 
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models/errors"
 )
 
 type AccessMode int

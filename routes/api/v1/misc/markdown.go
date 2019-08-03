@@ -6,9 +6,9 @@ package misc
 
 import (
 	api "github.com/gogs/go-gogs-client"
+	"gogs/pkg/markup"
 
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/markup"
+	"gogs/pkg/context"
 )
 
 // https://github.com/gogs/go-gogs-client/wiki/Miscellaneous#render-an-arbitrary-markdown-document

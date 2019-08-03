@@ -7,15 +7,14 @@ package markup
 import (
 	"bytes"
 	"fmt"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
+	"golang.org/x/net/html"
 	"io"
 	"regexp"
 	"strings"
 
 	"github.com/Unknwon/com"
-	"golang.org/x/net/html"
-
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 // IsReadmeFile reports whether name looks like a README file based on its extension.

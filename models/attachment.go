@@ -6,6 +6,7 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 	"io"
 	"mime/multipart"
 	"os"
@@ -14,8 +15,6 @@ import (
 
 	"github.com/go-xorm/xorm"
 	gouuid "github.com/satori/go.uuid"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 // Attachment represent a attachment of issue/comment/release.

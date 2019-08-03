@@ -5,6 +5,9 @@
 package repo
 
 import (
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 	"net/http"
 	"strings"
 	"time"
@@ -12,10 +15,7 @@ import (
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
+	"gogs/pkg/context"
 )
 
 func GetSingleCommit(c *context.APIContext) {

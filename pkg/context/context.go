@@ -6,6 +6,12 @@ package context
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/auth"
+	"gogs/pkg/form"
+	"gogs/pkg/setting"
+	"gogs/pkg/template"
 	"io"
 	"net/http"
 	"path"
@@ -19,13 +25,6 @@ import (
 	"github.com/go-macaron/session"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/auth"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/template"
 )
 
 // Context represents context of a request.

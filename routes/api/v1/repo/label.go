@@ -6,11 +6,11 @@ package repo
 
 import (
 	"github.com/Unknwon/com"
+	"gogs/models"
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
+	"gogs/pkg/context"
 )
 
 func ListLabels(c *context.APIContext) {

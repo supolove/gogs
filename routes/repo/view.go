@@ -7,6 +7,12 @@ package repo
 import (
 	"bytes"
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
+	"gogs/pkg/template"
+	"gogs/pkg/template/highlight"
+	"gogs/pkg/tool"
 	gotemplate "html/template"
 	"io/ioutil"
 	"path"
@@ -17,13 +23,7 @@ import (
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/template"
-	"github.com/gogs/gogs/pkg/template/highlight"
-	"github.com/gogs/gogs/pkg/tool"
+	"gogs/pkg/context"
 )
 
 const (
@@ -186,7 +186,7 @@ func renderFile(c *context.Context, entry *git.TreeEntry, treeLink, rawLink stri
 			var output bytes.Buffer
 			lines := strings.Split(fileContent, "\n")
 			// Remove blank line at the end of file
-			if len(lines) > 0 && len(lines[len(lines)-1])==0 {
+			if len(lines) > 0 && len(lines[len(lines)-1]) == 0 {
 				lines = lines[:len(lines)-1]
 			}
 			for index, line := range lines {

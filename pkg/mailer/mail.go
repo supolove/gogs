@@ -6,14 +6,13 @@ package mailer
 
 import (
 	"fmt"
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
 	"html/template"
 
 	log "gopkg.in/clog.v1"
 	"gopkg.in/gomail.v2"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 const (

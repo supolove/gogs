@@ -6,13 +6,12 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/mailer"
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
 
 	"github.com/Unknwon/com"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func (issue *Issue) MailSubject() string {

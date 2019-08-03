@@ -6,6 +6,10 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/process"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"io"
 	"io/ioutil"
 	"mime/multipart"
@@ -20,11 +24,6 @@ import (
 	gouuid "github.com/satori/go.uuid"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 const (

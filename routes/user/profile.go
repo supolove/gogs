@@ -6,15 +6,15 @@ package user
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
+	"gogs/routes/repo"
 	"strings"
 
 	"github.com/Unknwon/paginater"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
-	"github.com/gogs/gogs/routes/repo"
+	"gogs/pkg/context"
 )
 
 const (

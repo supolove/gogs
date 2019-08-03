@@ -10,6 +10,10 @@ import (
 	"crypto/tls"
 	"encoding/hex"
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/httplib"
+	"gogs/pkg/setting"
+	"gogs/pkg/sync"
 	"io/ioutil"
 	"strings"
 	"time"
@@ -20,11 +24,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/httplib"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/sync"
 )
 
 var HookQueue = sync.NewUniqueQueue(setting.Webhook.QueueLength)

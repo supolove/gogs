@@ -11,6 +11,10 @@ import (
 	"crypto/subtle"
 	"encoding/hex"
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/avatar"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"image"
 	_ "image/jpeg"
 	"image/png"
@@ -28,11 +32,6 @@ import (
 
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/avatar"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 // USER_AVATAR_URL_PREFIX is used to identify a URL is to access user avatar.

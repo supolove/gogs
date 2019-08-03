@@ -9,6 +9,8 @@ import (
 	"database/sql"
 	"errors"
 	"fmt"
+	"gogs/models/migrations"
+	"gogs/pkg/setting"
 	"net/url"
 	"os"
 	"path"
@@ -23,9 +25,6 @@ import (
 	"github.com/json-iterator/go"
 	_ "github.com/lib/pq"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models/migrations"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 // Engine represents a XORM engine or session.

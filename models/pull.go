@@ -6,6 +6,10 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/process"
+	"gogs/pkg/setting"
+	"gogs/pkg/sync"
 	"os"
 	"path"
 	"strings"
@@ -17,11 +21,6 @@ import (
 
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/sync"
 )
 
 var PullRequestQueue = sync.NewUniqueQueue(setting.Repository.PullRequestQueueLength)

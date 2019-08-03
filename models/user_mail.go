@@ -6,9 +6,8 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
 	"strings"
-
-	"github.com/gogs/gogs/models/errors"
 )
 
 // EmailAdresses is the list of all email addresses of a user. Can contain the

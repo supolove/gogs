@@ -7,6 +7,7 @@ package mailer
 import (
 	"crypto/tls"
 	"fmt"
+	"gogs/pkg/setting"
 	"io"
 	"net"
 	"net/smtp"
@@ -17,8 +18,6 @@ import (
 	"github.com/jaytaylor/html2text"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/gomail.v2"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 type Message struct {
@@ -52,7 +51,7 @@ func NewMessageFrom(to []string, from, subject, htmlBody string) *Message {
 	}
 	msg.SetBody(contentType, body)
 	if switchedToPlaintext && setting.MailService.AddPlainTextAlt && !setting.MailService.UsePlainText {
-		// The AddAlternative method name is confusing - adding html as an "alternative" will actually cause mail 
+		// The AddAlternative method name is confusing - adding html as an "alternative" will actually cause mail
 		// clients to show it as first priority, and the text "main body" is the 2nd priority fallback.
 		// See: https://godoc.org/gopkg.in/gomail.v2#Message.AddAlternative
 		msg.AddAlternative("text/html", htmlBody)

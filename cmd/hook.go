@@ -9,6 +9,12 @@ import (
 	"bytes"
 	"crypto/tls"
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/httplib"
+	"gogs/pkg/mailer"
+	"gogs/pkg/setting"
+	"gogs/pkg/template"
 	"os"
 	"os/exec"
 	"path"
@@ -20,13 +26,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/httplib"
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/template"
 )
 
 var (

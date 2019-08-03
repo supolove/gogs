@@ -5,13 +5,11 @@
 package markup_test
 
 import (
+	"gogs/pkg/setting"
 	"strings"
 	"testing"
 
 	. "github.com/smartystreets/goconvey/convey"
-
-	. "github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func Test_IsReadmeFile(t *testing.T) {

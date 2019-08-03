@@ -11,6 +11,7 @@ import (
 	"encoding/base64"
 	"encoding/hex"
 	"fmt"
+	"gogs/pkg/setting"
 	"html/template"
 	"math/big"
 	"strings"
@@ -23,8 +24,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	"github.com/gogs/chardet"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 // MD5Bytes encodes string to MD5 bytes.

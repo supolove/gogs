@@ -6,14 +6,14 @@ package repo
 
 import (
 	"container/list"
+	"gogs/models"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"path"
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
+	"gogs/pkg/context"
 )
 
 const (

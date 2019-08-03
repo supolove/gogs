@@ -6,6 +6,8 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/markup"
 	"strings"
 	"time"
 
@@ -14,9 +16,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/markup"
 )
 
 // CommentType defines whether a comment is just a simple comment, an action (like close) or a reference.

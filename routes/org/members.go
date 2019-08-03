@@ -6,12 +6,12 @@ package org
 
 import (
 	"github.com/Unknwon/com"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 	log "gopkg.in/clog.v1"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
+	"gogs/pkg/context"
 )
 
 const (

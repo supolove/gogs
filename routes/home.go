@@ -6,11 +6,11 @@ package routes
 
 import (
 	"github.com/Unknwon/paginater"
+	"gogs/models"
+	"gogs/pkg/setting"
+	"gogs/routes/user"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/routes/user"
+	"gogs/pkg/context"
 )
 
 const (

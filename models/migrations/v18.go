@@ -6,10 +6,9 @@ package migrations
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 
 	"github.com/go-xorm/xorm"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func updateRepositoryDescriptionField(x *xorm.Engine) error {
@@ -20,15 +19,15 @@ func updateRepositoryDescriptionField(x *xorm.Engine) error {
 		return nil
 	}
 	switch {
-		case setting.UseMySQL:
-			_, err = x.Exec("ALTER TABLE `repository` MODIFY `description` VARCHAR(512);")
-		case setting.UseMSSQL:
-			_, err = x.Exec("ALTER TABLE `repository` ALTER COLUMN `description` VARCHAR(512);")
-		case setting.UsePostgreSQL:
-			_, err = x.Exec("ALTER TABLE `repository` ALTER COLUMN `description` TYPE VARCHAR(512);")
-		case setting.UseSQLite3:
-			// Sqlite3 uses TEXT type by default for any string type field.
-			// Keep this comment to mention that we don't missed any option.
+	case setting.UseMySQL:
+		_, err = x.Exec("ALTER TABLE `repository` MODIFY `description` VARCHAR(512);")
+	case setting.UseMSSQL:
+		_, err = x.Exec("ALTER TABLE `repository` ALTER COLUMN `description` VARCHAR(512);")
+	case setting.UsePostgreSQL:
+		_, err = x.Exec("ALTER TABLE `repository` ALTER COLUMN `description` TYPE VARCHAR(512);")
+	case setting.UseSQLite3:
+		// Sqlite3 uses TEXT type by default for any string type field.
+		// Keep this comment to mention that we don't missed any option.
 	}
 	return err
 }

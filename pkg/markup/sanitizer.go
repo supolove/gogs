@@ -5,12 +5,11 @@
 package markup
 
 import (
+	"gogs/pkg/setting"
 	"regexp"
 	"sync"
 
 	"github.com/microcosm-cc/bluemonday"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 // Sanitizer is a protection wrapper of *bluemonday.Policy which does not allow

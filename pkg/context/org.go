@@ -5,13 +5,12 @@
 package context
 
 import (
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 	"strings"
 
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 type Organization struct {

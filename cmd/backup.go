@@ -6,6 +6,8 @@ package cmd
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/setting"
 	"io/ioutil"
 	"os"
 	"path"
@@ -16,9 +18,6 @@ import (
 	"github.com/urfave/cli"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/ini.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var Backup = cli.Command{

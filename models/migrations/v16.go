@@ -6,6 +6,7 @@ package migrations
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 	"path/filepath"
 	"strings"
 
@@ -13,8 +14,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func updateRepositorySizes(x *xorm.Engine) (err error) {

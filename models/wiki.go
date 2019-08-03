@@ -6,6 +6,8 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
+	"gogs/pkg/sync"
 	"io/ioutil"
 	"net/url"
 	"os"
@@ -16,9 +18,6 @@ import (
 	"github.com/Unknwon/com"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/sync"
 )
 
 var wikiWorkingPool = sync.NewExclusivePool()

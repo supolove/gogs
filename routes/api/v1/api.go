@@ -5,6 +5,14 @@
 package v1
 
 import (
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/form"
+	"gogs/routes/api/v1/admin"
+	"gogs/routes/api/v1/misc"
+	"gogs/routes/api/v1/org"
+	"gogs/routes/api/v1/repo"
+	"gogs/routes/api/v1/user"
 	"net/http"
 	"strings"
 
@@ -13,15 +21,7 @@ import (
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/routes/api/v1/admin"
-	"github.com/gogs/gogs/routes/api/v1/misc"
-	"github.com/gogs/gogs/routes/api/v1/org"
-	"github.com/gogs/gogs/routes/api/v1/repo"
-	"github.com/gogs/gogs/routes/api/v1/user"
+	"gogs/pkg/context"
 )
 
 func repoAssignment() macaron.Handler {

@@ -7,13 +7,13 @@ package repo
 import (
 	"github.com/Unknwon/com"
 	"github.com/json-iterator/go"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/routes/api/v1/convert"
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/routes/api/v1/convert"
+	"gogs/pkg/context"
 )
 
 // https://github.com/gogs/go-gogs-client/wiki/Repositories#list-hooks

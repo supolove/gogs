@@ -6,11 +6,10 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
 	"strings"
 
 	"github.com/go-xorm/xorm"
-
-	"github.com/gogs/gogs/models/errors"
 )
 
 const OWNER_TEAM = "Owners"

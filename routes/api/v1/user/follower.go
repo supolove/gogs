@@ -6,9 +6,9 @@ package user
 
 import (
 	api "github.com/gogs/go-gogs-client"
+	"gogs/models"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
+	"gogs/pkg/context"
 )
 
 func responseApiUsers(c *context.APIContext, users []*models.User) {

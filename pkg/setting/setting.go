@@ -5,6 +5,9 @@
 package setting
 
 import (
+	"gogs/pkg/bindata"
+	"gogs/pkg/process"
+	"gogs/pkg/user"
 	"net/mail"
 	"net/url"
 	"os"
@@ -26,10 +29,6 @@ import (
 	"gopkg.in/ini.v1"
 
 	"github.com/gogs/go-libravatar"
-
-	"github.com/gogs/gogs/pkg/bindata"
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/user"
 )
 
 type Scheme string

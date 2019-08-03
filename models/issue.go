@@ -6,6 +6,9 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"strings"
 	"time"
 
@@ -14,10 +17,6 @@ import (
 	log "gopkg.in/clog.v1"
 
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 var (

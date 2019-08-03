@@ -6,6 +6,7 @@ package migrations
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 	"io/ioutil"
 	"os"
 	"path/filepath"
@@ -14,8 +15,6 @@ import (
 	"github.com/Unknwon/com"
 	"github.com/go-xorm/xorm"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func generateAndMigrateGitHooks(x *xorm.Engine) (err error) {

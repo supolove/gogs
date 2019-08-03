@@ -6,14 +6,13 @@ package migrations
 
 import (
 	"fmt"
+	"gogs/pkg/tool"
 	"strings"
 	"time"
 
 	"github.com/Unknwon/com"
 	"github.com/go-xorm/xorm"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 const _MIN_DB_VER = 10

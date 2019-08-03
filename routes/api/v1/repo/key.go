@@ -6,13 +6,13 @@ package repo
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/setting"
+	"gogs/routes/api/v1/convert"
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/routes/api/v1/convert"
+	"gogs/pkg/context"
 )
 
 func composeDeployKeysAPILink(repoPath string) string {

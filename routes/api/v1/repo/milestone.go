@@ -5,12 +5,12 @@
 package repo
 
 import (
+	"gogs/models"
 	"time"
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
+	"gogs/pkg/context"
 )
 
 func ListMilestones(c *context.APIContext) {

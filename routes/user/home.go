@@ -7,14 +7,14 @@ package user
 import (
 	"bytes"
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 
 	"github.com/Unknwon/com"
 	"github.com/Unknwon/paginater"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
+	"gogs/pkg/context"
 )
 
 const (

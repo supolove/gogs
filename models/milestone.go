@@ -6,14 +6,13 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 	"time"
 
 	"github.com/go-xorm/xorm"
 	log "gopkg.in/clog.v1"
 
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 // Milestone represents a milestone of repository.

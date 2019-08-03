@@ -6,11 +6,11 @@ package user
 
 import (
 	api "github.com/gogs/go-gogs-client"
+	"gogs/models"
+	"gogs/pkg/setting"
+	"gogs/routes/api/v1/convert"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/routes/api/v1/convert"
+	"gogs/pkg/context"
 )
 
 // https://github.com/gogs/go-gogs-client/wiki/Users-Emails#list-email-addresses-for-a-user

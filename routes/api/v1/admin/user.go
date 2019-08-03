@@ -5,16 +5,16 @@
 package admin
 
 import (
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/mailer"
+	"gogs/pkg/setting"
+	"gogs/routes/api/v1/user"
 	log "gopkg.in/clog.v1"
 
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/routes/api/v1/user"
+	"gogs/pkg/context"
 )
 
 func parseLoginSource(c *context.APIContext, u *models.User, sourceID int64, loginName string) {

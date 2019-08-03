@@ -6,6 +6,8 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/process"
 	"sort"
 	"strings"
 	"time"
@@ -15,9 +17,6 @@ import (
 
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/process"
 )
 
 // Release represents a release of repository.

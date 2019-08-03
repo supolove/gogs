@@ -6,6 +6,8 @@ package ssh
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/setting"
 	"io"
 	"io/ioutil"
 	"net"
@@ -17,9 +19,6 @@ import (
 	"github.com/Unknwon/com"
 	"golang.org/x/crypto/ssh"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 func cleanCommand(cmd string) string {

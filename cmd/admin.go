@@ -6,13 +6,12 @@ package cmd
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/setting"
 	"reflect"
 	"runtime"
 
 	"github.com/urfave/cli"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var (

@@ -7,6 +7,9 @@ package models
 import (
 	"encoding/base64"
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"strings"
 	"time"
 
@@ -14,10 +17,6 @@ import (
 	"github.com/go-xorm/xorm"
 	"github.com/pquerna/otp/totp"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 // TwoFactor represents a two-factor authentication token.

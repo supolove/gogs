@@ -9,6 +9,8 @@ import (
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"gogs/pkg/process"
+	"gogs/pkg/setting"
 	"io/ioutil"
 	"math/big"
 	"os"
@@ -22,9 +24,6 @@ import (
 	"github.com/go-xorm/xorm"
 	"golang.org/x/crypto/ssh"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 const (

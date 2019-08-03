@@ -8,14 +8,13 @@ import (
 	"bufio"
 	"bytes"
 	"fmt"
+	"gogs/pkg/setting"
 	"os"
 	"path/filepath"
 	"time"
 
 	"github.com/Unknwon/com"
 	"github.com/urfave/cli"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var (

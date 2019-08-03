@@ -8,12 +8,11 @@
 package main
 
 import (
+	"gogs/cmd"
+	"gogs/pkg/setting"
 	"os"
 
 	"github.com/urfave/cli"
-
-	"github.com/gogs/gogs/cmd"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 const APP_VER = "0.11.89.0728"

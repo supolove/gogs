@@ -6,6 +6,9 @@ package models
 
 import (
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"path"
 	"regexp"
 	"strings"
@@ -19,10 +22,6 @@ import (
 
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 type ActionType int

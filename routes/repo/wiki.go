@@ -5,16 +5,16 @@
 package repo
 
 import (
+	"gogs/models"
+	"gogs/pkg/form"
+	"gogs/pkg/markup"
 	"io/ioutil"
 	"strings"
 	"time"
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/markup"
+	"gogs/pkg/context"
 )
 
 const (

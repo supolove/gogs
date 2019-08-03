@@ -6,15 +6,14 @@ package repo
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/form"
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
 	"strings"
 
+	"gogs/pkg/context"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 const (

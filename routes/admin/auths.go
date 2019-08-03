@@ -6,6 +6,10 @@ package admin
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/pkg/auth/ldap"
+	"gogs/pkg/form"
+	"gogs/pkg/setting"
 	"net/http"
 	"strings"
 
@@ -13,11 +17,7 @@ import (
 	"github.com/go-xorm/core"
 	log "gopkg.in/clog.v1"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/auth/ldap"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/setting"
+	"gogs/pkg/context"
 )
 
 const (

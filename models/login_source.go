@@ -8,6 +8,11 @@ package models
 import (
 	"crypto/tls"
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/auth/github"
+	"gogs/pkg/auth/ldap"
+	"gogs/pkg/auth/pam"
+	"gogs/pkg/setting"
 	"net/smtp"
 	"net/textproto"
 	"os"
@@ -23,12 +28,6 @@ import (
 	"github.com/json-iterator/go"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/ini.v1"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/auth/github"
-	"github.com/gogs/gogs/pkg/auth/ldap"
-	"github.com/gogs/gogs/pkg/auth/pam"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 type LoginType int

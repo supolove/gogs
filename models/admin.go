@@ -6,6 +6,7 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/tool"
 	"os"
 	"strings"
 	"time"
@@ -13,8 +14,6 @@ import (
 	"github.com/Unknwon/com"
 	"github.com/go-xorm/xorm"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 type NoticeType int

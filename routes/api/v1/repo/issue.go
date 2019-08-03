@@ -6,14 +6,13 @@ package repo
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 	"strings"
 
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
+	"gogs/pkg/context"
 )
 
 func listIssues(c *context.APIContext, opts *models.IssuesOptions) {

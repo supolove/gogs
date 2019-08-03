@@ -5,14 +5,13 @@
 package cron
 
 import (
+	"gogs/models"
+	"gogs/pkg/setting"
 	"time"
 
 	log "gopkg.in/clog.v1"
 
 	"github.com/gogs/cron"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var c = cron.New()

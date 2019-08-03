@@ -6,6 +6,11 @@ package repo
 
 import (
 	"container/list"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/form"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"path"
 	"strings"
 
@@ -14,12 +19,7 @@ import (
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
+	"gogs/pkg/context"
 )
 
 const (

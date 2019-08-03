@@ -5,6 +5,8 @@
 package repo
 
 import (
+	"gogs/models"
+	"gogs/pkg/tool"
 	"time"
 
 	log "gopkg.in/clog.v1"
@@ -12,9 +14,7 @@ import (
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/tool"
+	"gogs/pkg/context"
 )
 
 const (

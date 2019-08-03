@@ -5,6 +5,8 @@
 package cmd
 
 import (
+	"gogs/models"
+	"gogs/pkg/setting"
 	"os"
 	"path"
 
@@ -14,9 +16,6 @@ import (
 	"github.com/urfave/cli"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/ini.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 var Restore = cli.Command{

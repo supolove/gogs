@@ -5,6 +5,10 @@
 package auth
 
 import (
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"strings"
 	"time"
 
@@ -12,11 +16,6 @@ import (
 	gouuid "github.com/satori/go.uuid"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 func IsAPIPath(url string) bool {

@@ -5,14 +5,14 @@
 package repo
 
 import (
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"io"
 	"path"
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
+	"gogs/pkg/context"
 )
 
 func ServeData(c *context.Context, name string, reader io.Reader) error {

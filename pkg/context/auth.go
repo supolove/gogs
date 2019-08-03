@@ -5,16 +5,15 @@
 package context
 
 import (
+	"gogs/pkg/auth"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"net/http"
 	"net/url"
 	"strings"
 
 	"github.com/go-macaron/csrf"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/pkg/auth"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 type ToggleOptions struct {

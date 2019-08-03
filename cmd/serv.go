@@ -6,6 +6,9 @@ package cmd
 
 import (
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -15,10 +18,6 @@ import (
 	"github.com/Unknwon/com"
 	"github.com/urfave/cli"
 	log "gopkg.in/clog.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 const (

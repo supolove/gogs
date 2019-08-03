@@ -7,6 +7,10 @@ package models
 import (
 	"container/list"
 	"fmt"
+	"gogs/models/errors"
+	"gogs/pkg/process"
+	"gogs/pkg/setting"
+	"gogs/pkg/sync"
 	"net/url"
 	"strings"
 	"time"
@@ -17,11 +21,6 @@ import (
 	"gopkg.in/ini.v1"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/process"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/sync"
 )
 
 var MirrorQueue = sync.NewUniqueQueue(setting.Repository.MirrorQueueLength)

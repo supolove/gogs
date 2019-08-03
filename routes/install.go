@@ -5,6 +5,16 @@
 package routes
 
 import (
+	"gogs/models"
+	"gogs/pkg/cron"
+	"gogs/pkg/form"
+	"gogs/pkg/mailer"
+	"gogs/pkg/markup"
+	"gogs/pkg/setting"
+	"gogs/pkg/ssh"
+	"gogs/pkg/template/highlight"
+	"gogs/pkg/tool"
+	"gogs/pkg/user"
 	"net/mail"
 	"os"
 	"os/exec"
@@ -19,17 +29,7 @@ import (
 
 	"github.com/gogs/git-module"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/cron"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/markup"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/ssh"
-	"github.com/gogs/gogs/pkg/template/highlight"
-	"github.com/gogs/gogs/pkg/tool"
-	"github.com/gogs/gogs/pkg/user"
+	"gogs/pkg/context"
 )
 
 const (

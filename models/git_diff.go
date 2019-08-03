@@ -7,6 +7,9 @@ package models
 import (
 	"bytes"
 	"fmt"
+	"gogs/pkg/setting"
+	"gogs/pkg/template/highlight"
+	"gogs/pkg/tool"
 	"html"
 	"html/template"
 	"io"
@@ -16,10 +19,6 @@ import (
 	"golang.org/x/text/transform"
 
 	"github.com/gogs/git-module"
-
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/template/highlight"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 type DiffSection struct {

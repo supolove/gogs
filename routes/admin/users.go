@@ -5,17 +5,17 @@
 package admin
 
 import (
+	"gogs/models"
+	"gogs/pkg/form"
+	"gogs/pkg/mailer"
+	"gogs/pkg/setting"
+	"gogs/routes"
 	"strings"
 
 	"github.com/Unknwon/com"
 	log "gopkg.in/clog.v1"
 
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/form"
-	"github.com/gogs/gogs/pkg/mailer"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/routes"
+	"gogs/pkg/context"
 )
 
 const (

@@ -6,6 +6,7 @@ package models
 
 import (
 	"fmt"
+	"gogs/pkg/setting"
 	"strconv"
 	"strings"
 
@@ -13,8 +14,6 @@ import (
 
 	"github.com/gogs/git-module"
 	api "github.com/gogs/go-gogs-client"
-
-	"github.com/gogs/gogs/pkg/setting"
 )
 
 type DiscordEmbedFooterObject struct {

@@ -8,6 +8,10 @@ import (
 	"bytes"
 	"compress/gzip"
 	"fmt"
+	"gogs/models"
+	"gogs/models/errors"
+	"gogs/pkg/setting"
+	"gogs/pkg/tool"
 	"net/http"
 	"os"
 	"os/exec"
@@ -17,14 +21,9 @@ import (
 	"strings"
 	"time"
 
+	"gogs/pkg/context"
 	log "gopkg.in/clog.v1"
 	"gopkg.in/macaron.v1"
-
-	"github.com/gogs/gogs/models"
-	"github.com/gogs/gogs/models/errors"
-	"github.com/gogs/gogs/pkg/context"
-	"github.com/gogs/gogs/pkg/setting"
-	"github.com/gogs/gogs/pkg/tool"
 )
 
 type HTTPContext struct {
